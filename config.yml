@@ -1,5 +1,4 @@
 version: 2.1
-
 jobs:
   build:
     docker:
@@ -18,7 +17,6 @@ jobs:
       - image: cimg/python:3.11
     steps:
       - run: echo "Deploying to production server"
-
 workflows:
   build_test_deploy:
     jobs:
@@ -32,4 +30,3 @@ workflows:
           filters:
             branches:
               only: main
-
